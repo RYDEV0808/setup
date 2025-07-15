@@ -1,5 +1,7 @@
+# Download this file
+
 def imported() :
-    print("\n\nsetup V1 [public-version] GitHub repository\n")
+    print("\n\nsetup V1.5 [public-version] GitHub repository\n")
     print("Hello!\n")
 
 imported()
@@ -10,21 +12,33 @@ class ask :
             import pygame
             print("Pygame installed")
         except : 
-            print("Installing pygame")
-            import subprocess
+            import platform
 
-            pygameInstall = "pip install pygame"
-            subprocess.Popen(pygameInstall, shell = True)
+            system = platform.system()
+            if system == "Windows" :
+                print("Installing pygame")
+                import subprocess
+                
+                pygameInstall = "pip install pygame"
+                subprocess.Popen(pygameInstall, shell = True)
+            else : 
+                print(f"Please install pygame, auto-install doesn't work with {system}")
     def MissingColorama(self) :
         try :
             import colorama
             print("Colorama installed")
         except :
-            print("Installing Colorama")
-            import subprocess
+            import platform
 
-            coloramaInstall = "pip install colorama"
-            subprocess.Popen(coloramaInstall, shell = True)
+            system = platform.system()
+            if system == "Windows" :
+                print("Installing Colorama")
+                import subprocess
+                
+                coloramaInstall = "pip install colorama"
+                subprocess.Popen(coloramaInstall, shell = True)
+            else :
+                print(f"Please install colorama, auto-install doesn't work with {system")
 
 
 class Color :
