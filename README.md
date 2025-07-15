@@ -10,5 +10,5 @@ This python package provides tools helpful for beginners in python, it helps mak
 # Update logs & information:
 * V1.5 -- checks the system type in class ask, if being used
 * V1.6 -- installing with ask, now made more readable with the auto-install function, which also specifys the reason the install might not be working
-* Will make the on-coming update, as a seprate branch
+* // Will make the on-coming update, as a seprate branch
 * no current work in progress...
