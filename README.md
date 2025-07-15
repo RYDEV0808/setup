@@ -6,4 +6,4 @@ This python package provides tools helpful for beginners in python, it helps mak
 * do not rename "__init__.py" as it will lead to an error
 
 # Update logs & information:
-* no current work in progress... comment suggetions
+* no current work in progress...
